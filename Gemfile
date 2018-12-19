@@ -64,3 +64,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'slim-rails'
 gem 'html2slim'
 gem 'bootstrap'
+
+group :development, :test do
+  # コードの静的解析ツール
+  gem 'rubocop', require: false
+end
